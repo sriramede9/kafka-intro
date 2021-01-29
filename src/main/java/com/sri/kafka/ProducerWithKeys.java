@@ -31,7 +31,7 @@ public class ProducerWithKeys {
 
 		// send data
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 10; i++) {
 
 			String key = "id_" + Integer.toString(i);
 
@@ -39,13 +39,12 @@ public class ProducerWithKeys {
 					"Hello with " + i);
 
 			callbackLog.info(key);
-			
+
 			// 0 -1
 			// 1 -> 0
 			// 2-2
-			//3 -> 0
+			// 3 -> 0
 			// 4 - 2
-			
 
 			producer.send(producerRecord, new Callback() {
 

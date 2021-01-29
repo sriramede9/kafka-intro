@@ -67,3 +67,7 @@ Understanding basic kafka skills on -- producer , consumer , topics, kafka cluse
 		}
 
 ```
+
+### Consumer Groups
+
+# If we have more than one consumer-group running of same group, then loadbalancing among the partitions is automatically done 
